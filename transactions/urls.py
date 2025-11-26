@@ -14,7 +14,7 @@ urlpatterns = [
 #     html 연결 > 기존거 그냥 두고 밑에 추가했어요
     path("html/", transaction_html_view, name="transaction_html"),
     path("html/create/", transaction_create_view, name="transaction_create"),
-    path('html/<int:pk>/', transaction_detail_view, name='transaction_detail_html'), # 이름중복 수정
+    path('html/<int:pk>/', transaction_detail_view, name='transaction_detail'),
     path('html/<int:pk>/update/', transaction_update_view, name='transaction_update'),
     path("html/<int:pk>/delete/", transaction_delete_view, name="transaction_delete_html"),
 
